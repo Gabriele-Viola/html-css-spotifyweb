@@ -9,20 +9,31 @@ body {
     overflow: hidden;
     font-family: "Lato", sans-serif;
 }
-img{
+
+img {
     max-width: 100%;
 }
-.py-2{
-    padding: 1rem 0;
+
+.conteiner {
+    width: 70%;
 }
-.unstyled-list {
-    list-style: none;
+.conteiner-bottom {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: blue;
 }
-.justify-content-btw{
-    justify-content: space-between;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-2 {
+    width: calc((100% / 12) * 2);
 }
 
 /* #region debug */
+
 .debug .bottom {
     background-color: rgb(53, 53, 53);
 }
@@ -50,12 +61,6 @@ img{
     border: 1px dashed;
     height: 30px;
 }
-
-.debug .icon {
-    background-color: deeppink;
-    height: 20px;
-}
-
 .debug .conteiner {
     width: 70%;
     background-color: purple;
@@ -66,7 +71,10 @@ img{
     height: 100%;
     background-color: red;
 }
-.debug .infoalbum, .debug .play, .debug .volume{
+
+.debug .infoalbum,
+.debug .play,
+.debug .volume {
     width: 25%;
     background-color: palegreen;
     height: 30px;
@@ -74,8 +82,18 @@ img{
 }
 
 /* #endregion debug */
+
+/* #region sidebar */
 .logo {
     padding: .6rem;
+}
+
+.sidebar {
+    width: 230px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .menu {
@@ -142,12 +160,13 @@ img{
 
 .profilo {
     width: 100%;
-    
+
 
 
 }
 
-.download, .account {
+.download,
+.account {
     background-color: lime;
     padding: 0 1rem;
 
@@ -155,6 +174,7 @@ img{
         display: flex;
         align-items: center;
         text-decoration: none;
+
         img {
             width: 15px;
             height: 15px;
@@ -168,16 +188,19 @@ img{
         }
     }
 }
-.download{
+
+.download {
     a {
         border-bottom: 1px solid grey;
     }
 }
+
 .account {
     a {
         display: flex;
         align-items: center;
         padding: .2rem 0;
+
         img {
             width: 20px;
             height: 20px;
@@ -194,21 +217,44 @@ img{
     }
 }
 
+/* #endregion sidebar */
+
+/* #region utilities */
 .d-flex {
     display: flex;
 }
-.direction-column{
+
+.direction-column {
     flex-direction: column;
 }
+.align-items-center{
+    align-items: center;
+}
+.d-none {
+    display: none;
+}
 
+.py-2 {
+    padding: 1rem 0;
+}
+.my-2{
+    margin: 1rem 0;
+}
+
+.unstyled-list {
+    list-style: none;
+}
+
+.justify-content-btw {
+    justify-content: space-between;
+}
+
+/* #endregion utilities */
 
 .bottom {
     height: 90px;
 }
 
-.d-none {
-    display: none;
-}
 
 .top {
     height: calc(100% - 90px);
@@ -218,17 +264,6 @@ img{
 
 }
 
-.sidebar {
-    width: 230px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.conteiner {
-    width: 70%;
-}
 
 .upgrade {
     width: 100%;
@@ -291,15 +326,61 @@ img{
         }
     }
 }
-
-.row {
+.infoalbum{
+    width: 20%;
+}
+.player-album {
+    width: 60%;
     display: flex;
-    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: .5rem;
+    img{
+        width: 20%;
+    }
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h5{
+        font-weight:bold;
+    }
+}
+.icons{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
 }
 
-.col-2 {
-    width: calc((100% / 12) * 2);
-
+.play{
+    height: 20px;
+    background-color: red;
+}
+.volume{
+    height: 20px;
+    width: 25%;
+    justify-content: space-around;
+    .icons{
+        width: 50%;
+        justify-content: space-between;
+    }
+}
+.volume-bar{
+    height: 4px;
+    background-color: black;
+    width: 50%;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 200px;
+    .bar{
+        height: 4px;
+        background-color: lime;
+        border-radius: 200px;
+        width: 30%;
+    }
 }
 
 @media screen and (max-width:700px) {
