@@ -9,7 +9,12 @@ body {
     overflow: hidden;
     font-family: "Lato", sans-serif;
 }
-
+img{
+    max-width: 100%;
+}
+.py-2{
+    padding: 1rem 0;
+}
 .unstyled-list {
     list-style: none;
 }
@@ -60,6 +65,12 @@ body {
 .debug .profilo {
     height: 100%;
     background-color: red;
+}
+.debug .infoalbum, .debug .play, .debug .volume{
+    width: 25%;
+    background-color: palegreen;
+    height: 30px;
+    border: 1px dashed;
 }
 
 /* #endregion debug */
@@ -142,16 +153,18 @@ body {
 
     a {
         display: flex;
+        align-items: center;
         text-decoration: none;
         img {
-            max-width: 10%;
+            width: 15px;
+            height: 15px;
             display: inline-block;
         }
 
         span {
             padding: .4rem;
             font-size: .7rem;
-            font-weight: 600;
+            font-weight: 500;
         }
     }
 }
@@ -162,25 +175,30 @@ body {
 }
 .account {
     a {
+        display: flex;
+        align-items: center;
+        padding: .2rem 0;
         img {
-            max-width: 10%;
-            aspect-ratio: 1;
+            width: 20px;
+            height: 20px;
             background-color: brown;
+            border-radius: 50%;
             display: inline-block;
         }
 
         span {
             padding: .4rem;
             font-size: .7rem;
-            font-weight: 600;
+            font-weight: 800;
         }
     }
 }
 
 .d-flex {
     display: flex;
+}
+.direction-column{
     flex-direction: column;
-
 }
 
 
