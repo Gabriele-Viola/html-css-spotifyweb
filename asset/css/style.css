@@ -223,8 +223,6 @@ img {
         align-items: center;
         text-decoration: none;
         color: var(--sp-white);
-        opacity: .5;
-
         img {
             width: 15px;
             height: 15px;
@@ -236,6 +234,11 @@ img {
             font-size: .7rem;
             font-weight: 500;
         }
+    }
+}
+.download{
+    a{
+        opacity: .5;
     }
 }
 
@@ -469,13 +472,15 @@ img {
     width: 20%;
 
     .icons {
+        a{
+            color: var(--sp-icons);
+            
+        }
         width: 30%;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 1.5rem;
-        color: var(--sp-icons);
-
         i:hover {
             color: var(--sp-white);
         }
@@ -599,8 +604,9 @@ img {
         justify-content: center;
         align-items: center;
         gap: .8rem;
-        color: var(--sp-icons);
-
+        a{
+            color: var(--sp-icons);
+        }
         i:hover {
             color: var(--sp-white);
         }
