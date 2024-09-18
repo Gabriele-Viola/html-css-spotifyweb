@@ -1,27 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style -->
     <link rel="stylesheet" href="./asset/css/style.css">
     <title>Bootify</title>
 </head>
+
 <body class="debug">
     <div class="top">
         <div class="sidebar">
-            
+            <div class="conteiner d-flex conteiner-xs justify-content-btw">
+
+                <div class="top-menu">
+                    <div class="logo">
+                        <a href="#">
+                            <img class="d-xs-none" src="./asset/img/logo.svg" alt="Spotify_Logo">
+                            <img class="d-none d-xs-block" src="./asset/img/logo-small.svg" alt="Spotify_Logo">
+                        </a>
+                    </div>
+                    <ul class="menu unstyled-list">
+                        <li>
+                            <a href="#">
+                                <img src="./asset/img/home.svg" alt="">
+                                <span class="d-xs-none">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./asset/img/search.svg" alt="">
+                                <span class="d-xs-none">Cerca</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./asset/img/libreria.svg" alt="">
+                                <span class="d-xs-none">La tua libreria</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!-- menu home -->
+                    <h3 class="d-xs-none">PLAYLIST</h3>
+                    <ul class="your-playlist unstyled-list d-xs-none">
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-square-plus"></i>
+                                <span>Crea la tua playlist</span>
+                            </a>
+                        </li>
+                        <li>
+                            Nome playlist
+                        </li>
+                        <li>
+                            Nome playlist
+                        </li>
+                        <li>
+                            Nome playlist
+                        </li>
+                        <li>
+                            Nome playlist
+                        </li>
+                        <li>
+                            Nome playlist
+                        </li>
+                        <li>
+                            Nome playlist
+                        </li>
+                        <li>
+                            Nome playlist
+                        </li>
+                    </ul>
+                    <!-- /.your-playlist -->
+                </div>
+                <!-- bottom-menu -->
+            </div>
+            <div class="botton-menu">
+                <div class="profilo">
+                    <div class="download">
+                        <a href="#">
+                            <img src="./asset/img/download.svg" alt="">
+                            <span>Installa App</span>
+                        </a>
+                    </div>
+                    <!-- /.download -->
+                    <div class="account">
+                        <a href="#">
+                            <img src="./asset/img/profile.svg" alt="">
+                            <span>Jhon Doe</span>
+                        </a>
+                    </div>
+                    <!-- /.account -->
+                </div>
+                <!-- profilo -->
+            </div>
+            <!-- /.conteiner -->
         </div>
+        <!-- sidebar -->
         <main class="app-main">
-        <header class="upgrade">
+            <header class="upgrade">
+                <div class="btn">Effettua L'upgrade</div>
+            </header>
+            <div class="typology">
+                <ul>
+                    <li>
+                        <div>in evidenza</div>
+                        <div class="underline"></div>
+                    </li>
+                    <li>
+                        <div>podcast</div>
+                        <div class="underline"></div>
+                    </li>
+                    <li>
+                        <div>classifiche</div>
+                        <div class="underline"></div>
+                    </li>
+                    <li>
+                        <div>generi e mood</div>
+                        <div class="underline"></div>
+                    </li>
+                    <li>
+                        <div>nuove uscite</div>
+                        <div class="underline"></div>
+                    </li>
+                    <li>
+                        <div>scopri</div>
+                        <div class="underline"></div>
+                    </li>
+                </ul>
+            </div>
+            <main class="playlist">
+                <h2>
+                    Recently played
+                </h2>
+                <div class="row">
+                    <div class="col-2 col-md-3 col-s-6">
+                        <img src="" alt="heavyMetal">
+                        <h3>heavyMetal</h3>
+                        <h6>Subtitle</h6>
+                    </div>
+                    <div class="col-2 col-md-3 col-s-6">
+                        <img src="" alt="Strangerthings">
+                        <h3>heavyMetal</h3>
+                        <h6>Subtitle</h6>
+                    </div>
+                    <div class="col-2 col-md-3 col-s-6">
+                        <img src="" alt="A quet place">
+                        <h3>heavyMetal</h3>
+                        <h6>Subtitle</h6>
+                    </div>
+                    <div class="col-2 col-md-3 col-s-6">
+                        <img src="" alt="sinister">
+                        <h3>heavyMetal</h3>
+                        <h6>Subtitle</h6>
+                    </div>
+                    <div class="col-2 col-md-3 col-s-6">
+                        <img src="" alt="A cure for wellness">
+                        <h3>heavyMetal</h3>
+                        <h6>Subtitle</h6>
+                    </div>
+                    <div class="col-2 col-md-3 col-s-6">
+                        <img src="" alt="sinister">
+                        <h3>heavyMetal</h3>
+                        <h6>Subtitle</h6>
+                    </div>
+                </div>
+                <!-- row -->
+                <h2>
+                    Creato per John Doe
+                </h2>
+                <h4>
+                    Più ascoltati, più accurati saranno i suggerimenti
+                </h4>
+                <div class="row">
+                    <div class="col-2 col-md-3">
+                        <img src="" alt="heavyMetal">
+                        <h3>heavyMetal</h3>
+                        <h6>Subtitle</h6>
+                    </div>
+                    <div class="col-2 col-md-3">
+                        <img src="" alt="Strangerthings">
+                        <h3>heavyMetal</h3>
+                        <h6>Subtitle</h6>
+                    </div>
+                </div>
+                <!-- row -->
+                <!-- row -->
+                <h2>
+                    Artisti più popolari
+                </h2>
+                <h4>
+                    Più ascoltati, più accurati saranno i suggerimenti
+                </h4>
+                <div class="row">
+                    <div class="col-2 col-md-3">
+                        <img src="" alt="heavyMetal">
+                        <h3>heavyMetal</h3>
+                        <h6>Subtitle</h6>
+                    </div>
+                    <div class="col-2 col-md-3">
+                        <img src="" alt="Strangerthings">
+                        <h3>heavyMetal</h3>
+                        <h6>Subtitle</h6>
+                    </div>
+                </div>
+                <!-- row -->
 
-        </header>
-        <div class="typology">
-            
-        </div>
-        <main class="playlist">
-
-
-        </main>
+            </main>
 
         </main>
     </div>
@@ -30,4 +227,5 @@
     </div>
     <!-- /.bottom -->
 </body>
+
 </html>
